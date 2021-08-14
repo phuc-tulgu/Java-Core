@@ -31,8 +31,8 @@ public class Array {
 	}
 }
 
-cách loại bỏ khoảng trắng dư thừa ở giữa cho bạn nào cần nè.
-result = result.replaceAll("\\s+", " ");
+sentence = sentence.replaceAll(" ", "");
+    System.out.println("Chuỗi sau khi xóa khoảng trắng: " + sentence);
 
 //Cach 3
 import java.util.Scanner;
