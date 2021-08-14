@@ -1,0 +1,48 @@
+//Cach 1 (tu lam)
+import java.util.Scanner;
+
+public class java140821 {
+    public static void main(String[] args) {
+        String s;
+        Scanner sc = new Scanner(System.in);
+        s = sc.next();
+        for (int i = 0; i < s.length(); i++) {
+            if( s.charAt(i) >='0' && s.charAt(i)<='9'){
+                continue;
+            }
+            else {
+                System.out.print(s.charAt(i));
+            }
+        }
+    }
+}
+
+//Cach 2
+import java.util.Scanner;
+
+public class Array {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String s = sc.next();
+		for(char c = '0'; c <= '9';c++) {
+			s = s.replace(c + "", "");  //c là kiểu char, phải lấy c + "" để ép sang kiểu string mới có thể sử dụng replace vì s.replace(string, string);
+		}
+		System.out.println(s);
+	}
+}
+
+cách loại bỏ khoảng trắng dư thừa ở giữa cho bạn nào cần nè.
+result = result.replaceAll("\\s+", " ");
+
+//Cach 3
+import java.util.Scanner;
+
+public class Array {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+// \d nghĩa là một chữ số (Ký tự trong phạm vi 0-9) và +có nghĩa là 1 hoặc nhiều lần. Vì vậy, \d+là 1 hoặc nhiều chữ số.
+        s = s.replaceAll("\\d+","");
+        System.out.print(s);
+    }
+}
